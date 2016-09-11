@@ -28,45 +28,42 @@ Partial Class frmMain
         Me.lblResult = New System.Windows.Forms.Label()
         Me.btnCalc = New System.Windows.Forms.Button()
         Me.btnExit = New System.Windows.Forms.Button()
-        Me.btnAlabama = New System.Windows.Forms.RadioButton()
-        Me.btnAlaska = New System.Windows.Forms.RadioButton()
-        Me.btnArizona = New System.Windows.Forms.RadioButton()
-        Me.btnCalifornia = New System.Windows.Forms.RadioButton()
-        Me.btnColorado = New System.Windows.Forms.RadioButton()
-        Me.btnConnecticut = New System.Windows.Forms.RadioButton()
-        Me.btnDelaware = New System.Windows.Forms.RadioButton()
-        Me.RadioButton8 = New System.Windows.Forms.RadioButton()
-        Me.RadioButton9 = New System.Windows.Forms.RadioButton()
-        Me.RadioButton10 = New System.Windows.Forms.RadioButton()
-        Me.RadioButton11 = New System.Windows.Forms.RadioButton()
-        Me.RadioButton12 = New System.Windows.Forms.RadioButton()
-        Me.RadioButton13 = New System.Windows.Forms.RadioButton()
-        Me.RadioButton14 = New System.Windows.Forms.RadioButton()
-        Me.RadioButton15 = New System.Windows.Forms.RadioButton()
-        Me.RadioButton16 = New System.Windows.Forms.RadioButton()
-        Me.RadioButton17 = New System.Windows.Forms.RadioButton()
-        Me.RadioButton18 = New System.Windows.Forms.RadioButton()
-        Me.RadioButton19 = New System.Windows.Forms.RadioButton()
-        Me.RadioButton20 = New System.Windows.Forms.RadioButton()
-        Me.RadioButton1 = New System.Windows.Forms.RadioButton()
-        Me.RadioButton2 = New System.Windows.Forms.RadioButton()
+        Me.rdoAlabama = New System.Windows.Forms.RadioButton()
+        Me.rdoAlaska = New System.Windows.Forms.RadioButton()
+        Me.rdoArizona = New System.Windows.Forms.RadioButton()
+        Me.rdoCalifornia = New System.Windows.Forms.RadioButton()
+        Me.rdoColorado = New System.Windows.Forms.RadioButton()
+        Me.rdoConnecticut = New System.Windows.Forms.RadioButton()
+        Me.rdoDelaware = New System.Windows.Forms.RadioButton()
+        Me.rdoFlorida = New System.Windows.Forms.RadioButton()
+        Me.rdoGeorgia = New System.Windows.Forms.RadioButton()
+        Me.rdoPhoenix = New System.Windows.Forms.RadioButton()
+        Me.rdoDenver = New System.Windows.Forms.RadioButton()
+        Me.rdoDover = New System.Windows.Forms.RadioButton()
+        Me.rdoAtlanta = New System.Windows.Forms.RadioButton()
+        Me.rdoMontgomery = New System.Windows.Forms.RadioButton()
+        Me.rdoSacramento = New System.Windows.Forms.RadioButton()
+        Me.rdoTallahassee = New System.Windows.Forms.RadioButton()
+        Me.rdoLittleRock = New System.Windows.Forms.RadioButton()
+        Me.rdoHartford = New System.Windows.Forms.RadioButton()
+        Me.rdoJuneau = New System.Windows.Forms.RadioButton()
+        Me.rdoArkansas = New System.Windows.Forms.RadioButton()
         Me.GroupBox1.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
         Me.SuspendLayout()
         '
         'GroupBox1
         '
-        Me.GroupBox1.Controls.Add(Me.RadioButton1)
-        Me.GroupBox1.Controls.Add(Me.RadioButton10)
-        Me.GroupBox1.Controls.Add(Me.RadioButton9)
-        Me.GroupBox1.Controls.Add(Me.RadioButton8)
-        Me.GroupBox1.Controls.Add(Me.btnDelaware)
-        Me.GroupBox1.Controls.Add(Me.btnConnecticut)
-        Me.GroupBox1.Controls.Add(Me.btnColorado)
-        Me.GroupBox1.Controls.Add(Me.btnCalifornia)
-        Me.GroupBox1.Controls.Add(Me.btnArizona)
-        Me.GroupBox1.Controls.Add(Me.btnAlaska)
-        Me.GroupBox1.Controls.Add(Me.btnAlabama)
+        Me.GroupBox1.Controls.Add(Me.rdoArkansas)
+        Me.GroupBox1.Controls.Add(Me.rdoGeorgia)
+        Me.GroupBox1.Controls.Add(Me.rdoFlorida)
+        Me.GroupBox1.Controls.Add(Me.rdoDelaware)
+        Me.GroupBox1.Controls.Add(Me.rdoConnecticut)
+        Me.GroupBox1.Controls.Add(Me.rdoColorado)
+        Me.GroupBox1.Controls.Add(Me.rdoCalifornia)
+        Me.GroupBox1.Controls.Add(Me.rdoArizona)
+        Me.GroupBox1.Controls.Add(Me.rdoAlaska)
+        Me.GroupBox1.Controls.Add(Me.rdoAlabama)
         Me.GroupBox1.Location = New System.Drawing.Point(3, 0)
         Me.GroupBox1.Name = "GroupBox1"
         Me.GroupBox1.Size = New System.Drawing.Size(200, 337)
@@ -76,17 +73,16 @@ Partial Class frmMain
         '
         'GroupBox2
         '
-        Me.GroupBox2.Controls.Add(Me.RadioButton2)
-        Me.GroupBox2.Controls.Add(Me.RadioButton20)
-        Me.GroupBox2.Controls.Add(Me.RadioButton19)
-        Me.GroupBox2.Controls.Add(Me.RadioButton18)
-        Me.GroupBox2.Controls.Add(Me.RadioButton17)
-        Me.GroupBox2.Controls.Add(Me.RadioButton16)
-        Me.GroupBox2.Controls.Add(Me.RadioButton15)
-        Me.GroupBox2.Controls.Add(Me.RadioButton14)
-        Me.GroupBox2.Controls.Add(Me.RadioButton13)
-        Me.GroupBox2.Controls.Add(Me.RadioButton12)
-        Me.GroupBox2.Controls.Add(Me.RadioButton11)
+        Me.GroupBox2.Controls.Add(Me.rdoJuneau)
+        Me.GroupBox2.Controls.Add(Me.rdoHartford)
+        Me.GroupBox2.Controls.Add(Me.rdoLittleRock)
+        Me.GroupBox2.Controls.Add(Me.rdoTallahassee)
+        Me.GroupBox2.Controls.Add(Me.rdoSacramento)
+        Me.GroupBox2.Controls.Add(Me.rdoMontgomery)
+        Me.GroupBox2.Controls.Add(Me.rdoAtlanta)
+        Me.GroupBox2.Controls.Add(Me.rdoDover)
+        Me.GroupBox2.Controls.Add(Me.rdoDenver)
+        Me.GroupBox2.Controls.Add(Me.rdoPhoenix)
         Me.GroupBox2.Location = New System.Drawing.Point(209, 0)
         Me.GroupBox2.Name = "GroupBox2"
         Me.GroupBox2.Size = New System.Drawing.Size(200, 337)
@@ -111,6 +107,7 @@ Partial Class frmMain
         Me.lblResult.Size = New System.Drawing.Size(100, 23)
         Me.lblResult.TabIndex = 2
         Me.lblResult.Text = " "
+        Me.lblResult.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'btnCalc
         '
@@ -130,247 +127,225 @@ Partial Class frmMain
         Me.btnExit.Text = "E&xit"
         Me.btnExit.UseVisualStyleBackColor = True
         '
-        'btnAlabama
+        'rdoAlabama
         '
-        Me.btnAlabama.AutoSize = True
-        Me.btnAlabama.Location = New System.Drawing.Point(52, 36)
-        Me.btnAlabama.Name = "btnAlabama"
-        Me.btnAlabama.Size = New System.Drawing.Size(66, 17)
-        Me.btnAlabama.TabIndex = 5
-        Me.btnAlabama.TabStop = True
-        Me.btnAlabama.Text = "Ala&bama"
-        Me.btnAlabama.UseVisualStyleBackColor = True
+        Me.rdoAlabama.AutoSize = True
+        Me.rdoAlabama.Location = New System.Drawing.Point(52, 47)
+        Me.rdoAlabama.Name = "rdoAlabama"
+        Me.rdoAlabama.Size = New System.Drawing.Size(66, 17)
+        Me.rdoAlabama.TabIndex = 5
+        Me.rdoAlabama.TabStop = True
+        Me.rdoAlabama.Text = "Ala&bama"
+        Me.rdoAlabama.UseVisualStyleBackColor = True
         '
-        'btnAlaska
+        'rdoAlaska
         '
-        Me.btnAlaska.AutoSize = True
-        Me.btnAlaska.Location = New System.Drawing.Point(52, 61)
-        Me.btnAlaska.Name = "btnAlaska"
-        Me.btnAlaska.Size = New System.Drawing.Size(57, 17)
-        Me.btnAlaska.TabIndex = 6
-        Me.btnAlaska.TabStop = True
-        Me.btnAlaska.Text = "Alas&ka"
-        Me.btnAlaska.UseVisualStyleBackColor = True
+        Me.rdoAlaska.AutoSize = True
+        Me.rdoAlaska.Location = New System.Drawing.Point(52, 72)
+        Me.rdoAlaska.Name = "rdoAlaska"
+        Me.rdoAlaska.Size = New System.Drawing.Size(57, 17)
+        Me.rdoAlaska.TabIndex = 6
+        Me.rdoAlaska.TabStop = True
+        Me.rdoAlaska.Text = "Alas&ka"
+        Me.rdoAlaska.UseVisualStyleBackColor = True
         '
-        'btnArizona
+        'rdoArizona
         '
-        Me.btnArizona.AutoSize = True
-        Me.btnArizona.Location = New System.Drawing.Point(52, 86)
-        Me.btnArizona.Name = "btnArizona"
-        Me.btnArizona.Size = New System.Drawing.Size(60, 17)
-        Me.btnArizona.TabIndex = 7
-        Me.btnArizona.TabStop = True
-        Me.btnArizona.Text = "Ari&zona"
-        Me.btnArizona.UseVisualStyleBackColor = True
+        Me.rdoArizona.AutoSize = True
+        Me.rdoArizona.Location = New System.Drawing.Point(52, 97)
+        Me.rdoArizona.Name = "rdoArizona"
+        Me.rdoArizona.Size = New System.Drawing.Size(60, 17)
+        Me.rdoArizona.TabIndex = 7
+        Me.rdoArizona.TabStop = True
+        Me.rdoArizona.Text = "Ari&zona"
+        Me.rdoArizona.UseVisualStyleBackColor = True
         '
-        'btnCalifornia
+        'rdoCalifornia
         '
-        Me.btnCalifornia.AutoSize = True
-        Me.btnCalifornia.Location = New System.Drawing.Point(52, 136)
-        Me.btnCalifornia.Name = "btnCalifornia"
-        Me.btnCalifornia.Size = New System.Drawing.Size(68, 17)
-        Me.btnCalifornia.TabIndex = 8
-        Me.btnCalifornia.TabStop = True
-        Me.btnCalifornia.Text = "&California"
-        Me.btnCalifornia.UseVisualStyleBackColor = True
+        Me.rdoCalifornia.AutoSize = True
+        Me.rdoCalifornia.Location = New System.Drawing.Point(52, 147)
+        Me.rdoCalifornia.Name = "rdoCalifornia"
+        Me.rdoCalifornia.Size = New System.Drawing.Size(68, 17)
+        Me.rdoCalifornia.TabIndex = 8
+        Me.rdoCalifornia.TabStop = True
+        Me.rdoCalifornia.Text = "&California"
+        Me.rdoCalifornia.UseVisualStyleBackColor = True
         '
-        'btnColorado
+        'rdoColorado
         '
-        Me.btnColorado.AutoSize = True
-        Me.btnColorado.Location = New System.Drawing.Point(52, 161)
-        Me.btnColorado.Name = "btnColorado"
-        Me.btnColorado.Size = New System.Drawing.Size(67, 17)
-        Me.btnColorado.TabIndex = 9
-        Me.btnColorado.TabStop = True
-        Me.btnColorado.Text = "Co&lorado"
-        Me.btnColorado.UseVisualStyleBackColor = True
+        Me.rdoColorado.AutoSize = True
+        Me.rdoColorado.Location = New System.Drawing.Point(52, 172)
+        Me.rdoColorado.Name = "rdoColorado"
+        Me.rdoColorado.Size = New System.Drawing.Size(67, 17)
+        Me.rdoColorado.TabIndex = 9
+        Me.rdoColorado.TabStop = True
+        Me.rdoColorado.Text = "Co&lorado"
+        Me.rdoColorado.UseVisualStyleBackColor = True
         '
-        'btnConnecticut
+        'rdoConnecticut
         '
-        Me.btnConnecticut.AutoSize = True
-        Me.btnConnecticut.Location = New System.Drawing.Point(52, 186)
-        Me.btnConnecticut.Name = "btnConnecticut"
-        Me.btnConnecticut.Size = New System.Drawing.Size(82, 17)
-        Me.btnConnecticut.TabIndex = 10
-        Me.btnConnecticut.TabStop = True
-        Me.btnConnecticut.Text = "Co&nnecticut"
-        Me.btnConnecticut.UseVisualStyleBackColor = True
+        Me.rdoConnecticut.AutoSize = True
+        Me.rdoConnecticut.Location = New System.Drawing.Point(52, 197)
+        Me.rdoConnecticut.Name = "rdoConnecticut"
+        Me.rdoConnecticut.Size = New System.Drawing.Size(82, 17)
+        Me.rdoConnecticut.TabIndex = 10
+        Me.rdoConnecticut.TabStop = True
+        Me.rdoConnecticut.Text = "Co&nnecticut"
+        Me.rdoConnecticut.UseVisualStyleBackColor = True
         '
-        'btnDelaware
+        'rdoDelaware
         '
-        Me.btnDelaware.AutoSize = True
-        Me.btnDelaware.Location = New System.Drawing.Point(52, 211)
-        Me.btnDelaware.Name = "btnDelaware"
-        Me.btnDelaware.Size = New System.Drawing.Size(70, 17)
-        Me.btnDelaware.TabIndex = 11
-        Me.btnDelaware.TabStop = True
-        Me.btnDelaware.Text = "&Delaware"
-        Me.btnDelaware.UseVisualStyleBackColor = True
+        Me.rdoDelaware.AutoSize = True
+        Me.rdoDelaware.Location = New System.Drawing.Point(52, 222)
+        Me.rdoDelaware.Name = "rdoDelaware"
+        Me.rdoDelaware.Size = New System.Drawing.Size(70, 17)
+        Me.rdoDelaware.TabIndex = 11
+        Me.rdoDelaware.TabStop = True
+        Me.rdoDelaware.Text = "&Delaware"
+        Me.rdoDelaware.UseVisualStyleBackColor = True
         '
-        'RadioButton8
+        'rdoFlorida
         '
-        Me.RadioButton8.AutoSize = True
-        Me.RadioButton8.Location = New System.Drawing.Point(52, 236)
-        Me.RadioButton8.Name = "RadioButton8"
-        Me.RadioButton8.Size = New System.Drawing.Size(90, 17)
-        Me.RadioButton8.TabIndex = 12
-        Me.RadioButton8.TabStop = True
-        Me.RadioButton8.Text = "RadioButton8"
-        Me.RadioButton8.UseVisualStyleBackColor = True
+        Me.rdoFlorida.AutoSize = True
+        Me.rdoFlorida.Location = New System.Drawing.Point(52, 247)
+        Me.rdoFlorida.Name = "rdoFlorida"
+        Me.rdoFlorida.Size = New System.Drawing.Size(56, 17)
+        Me.rdoFlorida.TabIndex = 12
+        Me.rdoFlorida.TabStop = True
+        Me.rdoFlorida.Text = "&Florida"
+        Me.rdoFlorida.UseVisualStyleBackColor = True
         '
-        'RadioButton9
+        'rdoGeorgia
         '
-        Me.RadioButton9.AutoSize = True
-        Me.RadioButton9.Location = New System.Drawing.Point(52, 261)
-        Me.RadioButton9.Name = "RadioButton9"
-        Me.RadioButton9.Size = New System.Drawing.Size(90, 17)
-        Me.RadioButton9.TabIndex = 13
-        Me.RadioButton9.TabStop = True
-        Me.RadioButton9.Text = "RadioButton9"
-        Me.RadioButton9.UseVisualStyleBackColor = True
+        Me.rdoGeorgia.AutoSize = True
+        Me.rdoGeorgia.Location = New System.Drawing.Point(52, 272)
+        Me.rdoGeorgia.Name = "rdoGeorgia"
+        Me.rdoGeorgia.Size = New System.Drawing.Size(62, 17)
+        Me.rdoGeorgia.TabIndex = 13
+        Me.rdoGeorgia.TabStop = True
+        Me.rdoGeorgia.Text = "&Georgia"
+        Me.rdoGeorgia.UseVisualStyleBackColor = True
         '
-        'RadioButton10
+        'rdoPhoenix
         '
-        Me.RadioButton10.AutoSize = True
-        Me.RadioButton10.Location = New System.Drawing.Point(52, 284)
-        Me.RadioButton10.Name = "RadioButton10"
-        Me.RadioButton10.Size = New System.Drawing.Size(96, 17)
-        Me.RadioButton10.TabIndex = 14
-        Me.RadioButton10.TabStop = True
-        Me.RadioButton10.Text = "RadioButton10"
-        Me.RadioButton10.UseVisualStyleBackColor = True
+        Me.rdoPhoenix.AutoSize = True
+        Me.rdoPhoenix.Location = New System.Drawing.Point(52, 47)
+        Me.rdoPhoenix.Name = "rdoPhoenix"
+        Me.rdoPhoenix.Size = New System.Drawing.Size(63, 17)
+        Me.rdoPhoenix.TabIndex = 0
+        Me.rdoPhoenix.TabStop = True
+        Me.rdoPhoenix.Text = "&Phoenix"
+        Me.rdoPhoenix.UseVisualStyleBackColor = True
         '
-        'RadioButton11
+        'rdoDenver
         '
-        Me.RadioButton11.AutoSize = True
-        Me.RadioButton11.Location = New System.Drawing.Point(52, 36)
-        Me.RadioButton11.Name = "RadioButton11"
-        Me.RadioButton11.Size = New System.Drawing.Size(96, 17)
-        Me.RadioButton11.TabIndex = 0
-        Me.RadioButton11.TabStop = True
-        Me.RadioButton11.Text = "RadioButton11"
-        Me.RadioButton11.UseVisualStyleBackColor = True
+        Me.rdoDenver.AutoSize = True
+        Me.rdoDenver.Location = New System.Drawing.Point(52, 72)
+        Me.rdoDenver.Name = "rdoDenver"
+        Me.rdoDenver.Size = New System.Drawing.Size(60, 17)
+        Me.rdoDenver.TabIndex = 1
+        Me.rdoDenver.TabStop = True
+        Me.rdoDenver.Text = "Den&ver"
+        Me.rdoDenver.UseVisualStyleBackColor = True
         '
-        'RadioButton12
+        'rdoDover
         '
-        Me.RadioButton12.AutoSize = True
-        Me.RadioButton12.Location = New System.Drawing.Point(52, 61)
-        Me.RadioButton12.Name = "RadioButton12"
-        Me.RadioButton12.Size = New System.Drawing.Size(96, 17)
-        Me.RadioButton12.TabIndex = 1
-        Me.RadioButton12.TabStop = True
-        Me.RadioButton12.Text = "RadioButton12"
-        Me.RadioButton12.UseVisualStyleBackColor = True
+        Me.rdoDover.AutoSize = True
+        Me.rdoDover.Location = New System.Drawing.Point(52, 97)
+        Me.rdoDover.Name = "rdoDover"
+        Me.rdoDover.Size = New System.Drawing.Size(54, 17)
+        Me.rdoDover.TabIndex = 2
+        Me.rdoDover.TabStop = True
+        Me.rdoDover.Text = "D&over"
+        Me.rdoDover.UseVisualStyleBackColor = True
         '
-        'RadioButton13
+        'rdoAtlanta
         '
-        Me.RadioButton13.AutoSize = True
-        Me.RadioButton13.Location = New System.Drawing.Point(52, 86)
-        Me.RadioButton13.Name = "RadioButton13"
-        Me.RadioButton13.Size = New System.Drawing.Size(96, 17)
-        Me.RadioButton13.TabIndex = 2
-        Me.RadioButton13.TabStop = True
-        Me.RadioButton13.Text = "RadioButton13"
-        Me.RadioButton13.UseVisualStyleBackColor = True
+        Me.rdoAtlanta.AutoSize = True
+        Me.rdoAtlanta.Location = New System.Drawing.Point(52, 122)
+        Me.rdoAtlanta.Name = "rdoAtlanta"
+        Me.rdoAtlanta.Size = New System.Drawing.Size(58, 17)
+        Me.rdoAtlanta.TabIndex = 3
+        Me.rdoAtlanta.TabStop = True
+        Me.rdoAtlanta.Text = "At&lanta"
+        Me.rdoAtlanta.UseVisualStyleBackColor = True
         '
-        'RadioButton14
+        'rdoMontgomery
         '
-        Me.RadioButton14.AutoSize = True
-        Me.RadioButton14.Location = New System.Drawing.Point(52, 111)
-        Me.RadioButton14.Name = "RadioButton14"
-        Me.RadioButton14.Size = New System.Drawing.Size(96, 17)
-        Me.RadioButton14.TabIndex = 3
-        Me.RadioButton14.TabStop = True
-        Me.RadioButton14.Text = "RadioButton14"
-        Me.RadioButton14.UseVisualStyleBackColor = True
+        Me.rdoMontgomery.AutoSize = True
+        Me.rdoMontgomery.Location = New System.Drawing.Point(52, 147)
+        Me.rdoMontgomery.Name = "rdoMontgomery"
+        Me.rdoMontgomery.Size = New System.Drawing.Size(83, 17)
+        Me.rdoMontgomery.TabIndex = 4
+        Me.rdoMontgomery.TabStop = True
+        Me.rdoMontgomery.Text = "&Montgomery"
+        Me.rdoMontgomery.UseVisualStyleBackColor = True
         '
-        'RadioButton15
+        'rdoSacramento
         '
-        Me.RadioButton15.AutoSize = True
-        Me.RadioButton15.Location = New System.Drawing.Point(52, 136)
-        Me.RadioButton15.Name = "RadioButton15"
-        Me.RadioButton15.Size = New System.Drawing.Size(96, 17)
-        Me.RadioButton15.TabIndex = 4
-        Me.RadioButton15.TabStop = True
-        Me.RadioButton15.Text = "RadioButton15"
-        Me.RadioButton15.UseVisualStyleBackColor = True
+        Me.rdoSacramento.AutoSize = True
+        Me.rdoSacramento.Location = New System.Drawing.Point(52, 172)
+        Me.rdoSacramento.Name = "rdoSacramento"
+        Me.rdoSacramento.Size = New System.Drawing.Size(82, 17)
+        Me.rdoSacramento.TabIndex = 5
+        Me.rdoSacramento.TabStop = True
+        Me.rdoSacramento.Text = "&Sacramento"
+        Me.rdoSacramento.UseVisualStyleBackColor = True
         '
-        'RadioButton16
+        'rdoTallahassee
         '
-        Me.RadioButton16.AutoSize = True
-        Me.RadioButton16.Location = New System.Drawing.Point(52, 161)
-        Me.RadioButton16.Name = "RadioButton16"
-        Me.RadioButton16.Size = New System.Drawing.Size(96, 17)
-        Me.RadioButton16.TabIndex = 5
-        Me.RadioButton16.TabStop = True
-        Me.RadioButton16.Text = "RadioButton16"
-        Me.RadioButton16.UseVisualStyleBackColor = True
+        Me.rdoTallahassee.AutoSize = True
+        Me.rdoTallahassee.Location = New System.Drawing.Point(52, 197)
+        Me.rdoTallahassee.Name = "rdoTallahassee"
+        Me.rdoTallahassee.Size = New System.Drawing.Size(82, 17)
+        Me.rdoTallahassee.TabIndex = 6
+        Me.rdoTallahassee.TabStop = True
+        Me.rdoTallahassee.Text = "Tallahass&ee"
+        Me.rdoTallahassee.UseVisualStyleBackColor = True
         '
-        'RadioButton17
+        'rdoLittleRock
         '
-        Me.RadioButton17.AutoSize = True
-        Me.RadioButton17.Location = New System.Drawing.Point(52, 186)
-        Me.RadioButton17.Name = "RadioButton17"
-        Me.RadioButton17.Size = New System.Drawing.Size(96, 17)
-        Me.RadioButton17.TabIndex = 6
-        Me.RadioButton17.TabStop = True
-        Me.RadioButton17.Text = "RadioButton17"
-        Me.RadioButton17.UseVisualStyleBackColor = True
+        Me.rdoLittleRock.AutoSize = True
+        Me.rdoLittleRock.Location = New System.Drawing.Point(52, 222)
+        Me.rdoLittleRock.Name = "rdoLittleRock"
+        Me.rdoLittleRock.Size = New System.Drawing.Size(76, 17)
+        Me.rdoLittleRock.TabIndex = 7
+        Me.rdoLittleRock.TabStop = True
+        Me.rdoLittleRock.Text = "L&ittle Rock"
+        Me.rdoLittleRock.UseVisualStyleBackColor = True
         '
-        'RadioButton18
+        'rdoHartford
         '
-        Me.RadioButton18.AutoSize = True
-        Me.RadioButton18.Location = New System.Drawing.Point(52, 211)
-        Me.RadioButton18.Name = "RadioButton18"
-        Me.RadioButton18.Size = New System.Drawing.Size(96, 17)
-        Me.RadioButton18.TabIndex = 7
-        Me.RadioButton18.TabStop = True
-        Me.RadioButton18.Text = "RadioButton18"
-        Me.RadioButton18.UseVisualStyleBackColor = True
+        Me.rdoHartford.AutoSize = True
+        Me.rdoHartford.Location = New System.Drawing.Point(52, 247)
+        Me.rdoHartford.Name = "rdoHartford"
+        Me.rdoHartford.Size = New System.Drawing.Size(63, 17)
+        Me.rdoHartford.TabIndex = 8
+        Me.rdoHartford.TabStop = True
+        Me.rdoHartford.Text = "&Hartford"
+        Me.rdoHartford.UseVisualStyleBackColor = True
         '
-        'RadioButton19
+        'rdoJuneau
         '
-        Me.RadioButton19.AutoSize = True
-        Me.RadioButton19.Location = New System.Drawing.Point(52, 236)
-        Me.RadioButton19.Name = "RadioButton19"
-        Me.RadioButton19.Size = New System.Drawing.Size(96, 17)
-        Me.RadioButton19.TabIndex = 8
-        Me.RadioButton19.TabStop = True
-        Me.RadioButton19.Text = "RadioButton19"
-        Me.RadioButton19.UseVisualStyleBackColor = True
+        Me.rdoJuneau.AutoSize = True
+        Me.rdoJuneau.Location = New System.Drawing.Point(52, 272)
+        Me.rdoJuneau.Name = "rdoJuneau"
+        Me.rdoJuneau.Size = New System.Drawing.Size(60, 17)
+        Me.rdoJuneau.TabIndex = 9
+        Me.rdoJuneau.TabStop = True
+        Me.rdoJuneau.Text = "&Juneau"
+        Me.rdoJuneau.UseVisualStyleBackColor = True
         '
-        'RadioButton20
+        'rdoArkansas
         '
-        Me.RadioButton20.AutoSize = True
-        Me.RadioButton20.Location = New System.Drawing.Point(52, 261)
-        Me.RadioButton20.Name = "RadioButton20"
-        Me.RadioButton20.Size = New System.Drawing.Size(96, 17)
-        Me.RadioButton20.TabIndex = 9
-        Me.RadioButton20.TabStop = True
-        Me.RadioButton20.Text = "RadioButton20"
-        Me.RadioButton20.UseVisualStyleBackColor = True
-        '
-        'RadioButton1
-        '
-        Me.RadioButton1.AutoSize = True
-        Me.RadioButton1.Location = New System.Drawing.Point(52, 111)
-        Me.RadioButton1.Name = "RadioButton1"
-        Me.RadioButton1.Size = New System.Drawing.Size(90, 17)
-        Me.RadioButton1.TabIndex = 15
-        Me.RadioButton1.TabStop = True
-        Me.RadioButton1.Text = "RadioButton1"
-        Me.RadioButton1.UseVisualStyleBackColor = True
-        '
-        'RadioButton2
-        '
-        Me.RadioButton2.AutoSize = True
-        Me.RadioButton2.Location = New System.Drawing.Point(52, 284)
-        Me.RadioButton2.Name = "RadioButton2"
-        Me.RadioButton2.Size = New System.Drawing.Size(90, 17)
-        Me.RadioButton2.TabIndex = 10
-        Me.RadioButton2.TabStop = True
-        Me.RadioButton2.Text = "RadioButton2"
-        Me.RadioButton2.UseVisualStyleBackColor = True
+        Me.rdoArkansas.AutoSize = True
+        Me.rdoArkansas.Location = New System.Drawing.Point(52, 122)
+        Me.rdoArkansas.Name = "rdoArkansas"
+        Me.rdoArkansas.Size = New System.Drawing.Size(69, 17)
+        Me.rdoArkansas.TabIndex = 15
+        Me.rdoArkansas.TabStop = True
+        Me.rdoArkansas.Text = "A&rkansas"
+        Me.rdoArkansas.UseVisualStyleBackColor = True
         '
         'frmMain
         '
@@ -384,6 +359,7 @@ Partial Class frmMain
         Me.Controls.Add(Me.GroupBox2)
         Me.Controls.Add(Me.GroupBox1)
         Me.Name = "frmMain"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "State Capitols"
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
@@ -400,26 +376,24 @@ Partial Class frmMain
     Friend WithEvents lblResult As Label
     Friend WithEvents btnCalc As Button
     Friend WithEvents btnExit As Button
-    Friend WithEvents RadioButton1 As RadioButton
-    Friend WithEvents RadioButton10 As RadioButton
-    Friend WithEvents RadioButton9 As RadioButton
-    Friend WithEvents RadioButton8 As RadioButton
-    Friend WithEvents btnDelaware As RadioButton
-    Friend WithEvents btnConnecticut As RadioButton
-    Friend WithEvents btnColorado As RadioButton
-    Friend WithEvents btnCalifornia As RadioButton
-    Friend WithEvents btnArizona As RadioButton
-    Friend WithEvents btnAlaska As RadioButton
-    Friend WithEvents btnAlabama As RadioButton
-    Friend WithEvents RadioButton2 As RadioButton
-    Friend WithEvents RadioButton20 As RadioButton
-    Friend WithEvents RadioButton19 As RadioButton
-    Friend WithEvents RadioButton18 As RadioButton
-    Friend WithEvents RadioButton17 As RadioButton
-    Friend WithEvents RadioButton16 As RadioButton
-    Friend WithEvents RadioButton15 As RadioButton
-    Friend WithEvents RadioButton14 As RadioButton
-    Friend WithEvents RadioButton13 As RadioButton
-    Friend WithEvents RadioButton12 As RadioButton
-    Friend WithEvents RadioButton11 As RadioButton
+    Friend WithEvents rdoGeorgia As RadioButton
+    Friend WithEvents rdoFlorida As RadioButton
+    Friend WithEvents rdoDelaware As RadioButton
+    Friend WithEvents rdoConnecticut As RadioButton
+    Friend WithEvents rdoColorado As RadioButton
+    Friend WithEvents rdoCalifornia As RadioButton
+    Friend WithEvents rdoArizona As RadioButton
+    Friend WithEvents rdoAlaska As RadioButton
+    Friend WithEvents rdoAlabama As RadioButton
+    Friend WithEvents rdoJuneau As RadioButton
+    Friend WithEvents rdoHartford As RadioButton
+    Friend WithEvents rdoLittleRock As RadioButton
+    Friend WithEvents rdoTallahassee As RadioButton
+    Friend WithEvents rdoSacramento As RadioButton
+    Friend WithEvents rdoMontgomery As RadioButton
+    Friend WithEvents rdoAtlanta As RadioButton
+    Friend WithEvents rdoDover As RadioButton
+    Friend WithEvents rdoDenver As RadioButton
+    Friend WithEvents rdoPhoenix As RadioButton
+    Friend WithEvents rdoArkansas As RadioButton
 End Class
